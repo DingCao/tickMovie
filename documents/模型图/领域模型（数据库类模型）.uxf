@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>320</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Cinema
+--
+CinmaID
+dist_code
+name
+/hot-point
+/lowest price</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>530</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Reservation
+--
+total_price
+reservationTime
+phone
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>530</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>User
+--
+id
+name
+phone
+dist_code</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>290</y>
+      <w>430</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*
+instersted in ^</panel_attributes>
+    <additional_attributes>320.0;10.0;320.0;250.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>320</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>ticketProduct
+--
+descriptionID
+seatPosition
+isAvailable
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>90</y>
+      <w>110</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>ProductDescribe
+--
+movieID
+showroomID
+cinemaID
+type
+language
+time
+price
+discount</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>240</y>
+      <w>110</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+describe to v</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>140</y>
+      <w>180</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+&lt; has</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0;160.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>390</y>
+      <w>100</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..n
+m2=1
+contain in v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>520</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+make v
+</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>870</x>
+      <y>90</y>
+      <w>100</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>Movie
+--
+movieID
+name
+tags
+actors
+directors
+photos
+description
+languages
+duarion
+sale-account
+/hot-point</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>80</y>
+      <w>490</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+&lt; describe to</panel_attributes>
+    <additional_attributes>470.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>310</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.
+m1=0..n
+m2=1
+&lt; has</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>590</x>
+      <y>120</y>
+      <w>100</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>showroom
+--
+id
+name
+row
+col</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>330</y>
+      <w>100</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>location
+--
+dist_code
+name
+type
+isCaptital
+/hot-index</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>450</y>
+      <w>290</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+at &gt;</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;40.0;270.0;40.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>320</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=1
+Located on &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>620</x>
+      <y>200</y>
+      <w>70</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+has ^</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>110</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+&lt; show in </panel_attributes>
+    <additional_attributes>190.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>120</x>
+      <y>530</y>
+      <w>170</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>提交定单的时候锁定座位</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>150</x>
+      <y>320</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ticektProduct与
+某一场次某个座位
+等价</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>470</x>
+      <y>30</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>订票系统数据库模型</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
